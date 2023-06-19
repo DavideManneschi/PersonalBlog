@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="container">
+    <div class="intro">
+        <img src="davide.jpg" style="width: 300px; height: 300px; border-radius: 20px;">
+        </img>
+        <h1>Davide Manneschi</h1>
+        <p>I am a <span id="dynamic-text"></span></p>
+        <div class="links_social_media">
+            <a  target="_blank" href="https://google.com" style="background-url:'linkedin-130.svg' ">
+                <img src="linkedin-130.svg" height="30px" width="30px"></a>
+            <a target="_blank"  href="http://instagram.com">
+                <img height="30px" width="30px" src="instagram-logo-8869.svg">
+            </a>
+        </div>
+    </div>
+    <div class='about_me'>
+        <h2>About me</h2>
+        <p>I am 25 years old from Italy, currently living in the United States</p>
+        <div class='qualification'>
+            <h2>Qualifications</h2>
+            <ol type = "i">
+                <li>Bachelor's degree</li>
+                <li>Masters degree in Data Science</li>
+            </ol>
+        </div>
+        <div class="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li><h4>Karate</h4>
+                    <p class="description">I have started practicing martial arts since  i was 15 years old, In particular karate since i was 17.I really enjoy the agonistic side of it and all the philosophy associeted with it! OSS</p></li>
+
+                <li><h4>History</h4>
+                    <p>I really enjoy history books, in particular, 19<sup>th</sup> and 20<sup>th</sup> century wars fascinates me!</p></li>
+
+            </ul>
+        </div>
+        <div class=tech>
+            <h2>
+                Technologies
+            </h2>
+            <table class=table_tech>
+                <tr>
+                    <th>
+                        Frontend
+                    </th>
+                    <th>
+                        Backend
+                    </th>
+                    <th>
+                        Database
+                    </th>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>Java</td>
+                    <td>PostgreSQL</td>
+                </tr>
+                <tr>
+                    <td>Angular</td>
+                    <td>Node.js</td>
+                    <td>MongoDB</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Python</td>
+                    <td>MariaSQL</td>
+                </tr>
+            </table>
+        </div>
+
+        <button onclick="hello()"> click me!</button>
+        <button id="click">second click</button>
+        <button id="listener_click"> third</button>
+
+
+
+
+
+
+
+
+        <script onload="true" src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
+
+        <!--
+        This script places a badge on your repl's full-browser view back to your repl's cover
+        page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+        teal, blue, blurple, magenta, pink!
+        -->
+    </div>
+</body>
+
+</html>

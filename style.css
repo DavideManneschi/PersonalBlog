@@ -1,0 +1,77 @@
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif ;
+
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+.container{
+
+    padding: 20px;
+}
+
+.intro{
+
+    background-color:#4e3c3c;
+    color:white;
+    text-align:center;
+    margin: -20px;
+    padding: 20px;
+}
+.intro img{
+
+
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.links_social_media img{
+
+    border-radius: 3px;
+    width: 30px;
+    height:30px;
+    margin: 20px;
+
+
+}
+
+.hobbies h2{
+
+    text-align: center;
+
+}
+.tech h2{
+
+    text-align:center;
+}
+
+.about_me h2{
+
+    text-align:center;
+
+}
+
+
+.table_tech,tr,td,th{
+    border:1px solid black;
+    border-collapse: collapse;
+
+
+}
+
+.table_tech th,td{
+
+    padding: 10px;
+}
+
+p{
+
+    font-size:1.5rem;
+
+}
+
