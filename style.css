@@ -176,6 +176,17 @@ body,html{
 }
 
 
+.frontend_technologies_container{
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+.backend_technologies_container{
+
+    display: grid;
+    grid-template-columns: 200px 200px ;
+
+}
+
 
 /*
 ###########################################################################
