@@ -53,6 +53,18 @@ body,html{
 
     background-color:#0f2862;
 }
+.description_about_me{
+
+    font-size: 50px;
+    color: white;
+
+}
+
+.about_me{
+
+    background-color: #0f2862;
+    height: 400px;
+}
 
 .single_header_link_hamburger{
     margin-top: 3rem;
