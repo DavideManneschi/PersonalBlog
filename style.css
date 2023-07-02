@@ -51,7 +51,7 @@ body,html{
 
 
 
-    background-color: #0E2954;
+    background-color:#0f2862;
 }
 
 .single_header_link_hamburger{
@@ -186,40 +186,56 @@ body,html{
     display: grid;
     grid-template-columns: 200px 200px;
     grid-auto-rows: 200px 200px;
+    color: white;
 }
 .backend_technologies_container{
 
     display: grid;
     grid-template-columns: 200px 200px ;
     grid-template-rows: 200px 200px;
+    color: white;
 
+}
+.backend_title,.frontend_title{
+
+    color: white;
 }
 .tech_stack_grid{
 
-    background-color: #02a9f7;
+    background-color: #091f36;
 }
 
-.backend_element{
+.backend_element,.frontend_element{
+    text-align: center;
 
+    margin: 1rem;
     border: 3px solid red;
 }
+.
 
 
 /*
 ###########################################################################
  */
 
-@media (width< 1000px) {
+@media (width< 2000px) {
 
     .navigation_links{display: none}
     .button_menu{display: flex}
+    .backend_technologies_container,.frontend_technologies_container{
+
+        display: grid;
+        grid-template-columns: 150px 150px ;
+        grid-template-rows: 150px 150px;
+
+    }
 
 
 
 }
 
 
-@media (width< 700px) {
+@media (width< 900px) {
 
     .navigation_links{display: none}
     .button_menu{display: flex}
@@ -228,6 +244,7 @@ body,html{
     .upper_menu_stack{flex-direction: column;
     text-align: center}
     .backend_technologies_container,.frontend_technologies_container{
+        justify-content: center;
 
         display: grid;
         grid-template-columns: 150px 150px ;
