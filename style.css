@@ -44,10 +44,11 @@ body,html{
     transition: 2s;
     animation: fadeIn 1s;
     position: absolute;
+    height: 500px;
 
     z-index: 1;
 
-    margin-top: 440px;
+    margin-top: 550px;
 
 
 
@@ -74,7 +75,7 @@ body,html{
 
 .menu_hamburger a{
     text-decoration: none;
-    color: white;
+    color: #0E2954;
     margin: 1.5rem;
 
 
