@@ -46,9 +46,10 @@ body,html{
     position: absolute;
     height: 500px;
 
-    z-index: 1;
+
 
     margin-top: 550px;
+    overflow-y: scroll;
 
 
 
@@ -221,17 +222,17 @@ body,html{
 .backend_element,.frontend_element{
     text-align: center;
 
-    margin: 1rem;
-    border: 3px solid red;
+
+
 }
-.
+
 
 
 /*
 ###########################################################################
  */
 
-@media (width< 2000px) {
+@media (width< 1000px) {
 
     .navigation_links{display: none}
     .button_menu{display: flex}
