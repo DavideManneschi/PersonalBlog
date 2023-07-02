@@ -1,62 +1,79 @@
 
+let menu_hamburger_flag=false;
+let menu_hamburger=document.getElementById('menu_hamburger');
+let button_hamburger=document.getElementById('button_hamburger');
+let body=document.getElementById("menu_body_container");
+button_hamburger.addEventListener('click',function(){
+  console.log("the button has been clicked!")
+
+  if (!menu_hamburger_flag){
+
+    menu_hamburger_flag=true;
+    menu_hamburger.style.display='none';
+    menu_hamburger.classList.add("close");
+    body.classList.remove("hide_body")
+    button_hamburger.style.right='0'
 
 
 
 
-const skills = ["frontend dev...", "backend dev...", "fullstack dev..."]
-let increaing = false
-let curr_skill = -1
-let n = skills.length
+  }else{
 
-function insertText(){
-  const span_el = document.getElementById("dynamic-text");
-  let text = span_el.textContent
-  let time = 100
-  if(text.length == 0){
-    increasing  = true
-    curr_skill = (curr_skill+1)%n
+    menu_hamburger_flag=false;
+    menu_hamburger.style.display='flex';
+    menu_hamburger.classList.add("open");
+    body.classList.add("hide_body")
+
   }
-  else if(text.length == skills[curr_skill].length){
-    increasing = false
-    time = 500
-  }
-  if(increasing){
-    text += skills[curr_skill].charAt(text.length);
-  }
-  else{
-    text = text.slice(0,-1);
-  }
-  span_el.textContent = text
-  setTimeout(insertText, time);
 
-}
-
-insertText()
-
-const para = document.createElement("p");
-para.textContent = "This para is created using DOM APIs!";
-const spanEl = document.createElement("span");
-spanEl.className = "span1 span2";
-spanEl.id = "span3"
-spanEl.innerHTML = "abc<em>xyz</em>";
-spanEl.style.backgroundColor="yellow";
-spanEl.classList.add("span4")
-para.appendChild(spanEl);
-document.body.appendChild(para);
-
-
-function hello(){
-    console.log("hello world!");
-
-}
-
-
-let event_click=document.getElementById("click");
-event_click.onclick=hello;
-
-let third=document.getElementById("listener_click");
-
-third.addEventListener("click",()=>{
-
-    console.log("hello");
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const dynamicContent = document.getElementById("dynamic_text");
+
+  const phrases = ["Software Engineer...", " Lifelong Student...", "Karateka..."]
+  let pharseIndex = 0;
+  let letterIndex = 0;
+  const typingSpeed = 150;
+  const erasingSpeed = 75
+
+  function printLetters(phrase) {
+
+    if (letterIndex == phrase.length) {
+      // clear letter which have been typed
+      clearLetters();
+    }
+    else if (letterIndex < phrase.length) {
+      dynamicContent.textContent += phrase.charAt(letterIndex);
+      letterIndex += 1;
+      setTimeout(function () {
+        printLetters(phrase)
+      }, typingSpeed)
+    }
+  }
+
+  function clearLetters() {
+    if (letterIndex == -1) {
+      pharseIndex = (pharseIndex + 1) % phrases.length;
+      letterIndex = 0;
+      printLetters(phrases[pharseIndex])
+    }
+    else if (letterIndex > -1) {
+      let updatedPhrase = "";
+      for (let index = 0; index < letterIndex; index++) {
+        updatedPhrase += phrases[pharseIndex].charAt(index);
+
+      }
+      console.log(updatedPhrase);
+      dynamicContent.textContent = updatedPhrase;
+      letterIndex -= 1;
+      setTimeout(clearLetters, erasingSpeed)
+    }
+  }
+
+  printLetters(phrases[pharseIndex])
+})
+
+
+
