@@ -179,12 +179,23 @@ body,html{
 .frontend_technologies_container{
     display: grid;
     grid-template-columns: 200px 200px;
+    grid-auto-rows: 200px 200px;
 }
 .backend_technologies_container{
 
     display: grid;
     grid-template-columns: 200px 200px ;
+    grid-template-rows: 200px 200px;
 
+}
+.tech_stack_grid{
+
+    background-color: #02a9f7;
+}
+
+.backend_element{
+
+    border: 3px solid red;
 }
 
 
