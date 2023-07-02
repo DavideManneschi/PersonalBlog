@@ -159,12 +159,22 @@ body,html{
 }
 
 
+.upper_menu_stack,.lower_menu_stack{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem;
+}
 
 .tech_stack_grid{
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
 }
+
 
 
 /*
