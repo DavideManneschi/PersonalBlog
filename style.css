@@ -209,6 +209,7 @@ body,html{
     .button_menu{display: flex}
 
 
+
 }
 
 
@@ -218,6 +219,7 @@ body,html{
     .button_menu{display: flex}
     .hello_container{flex-direction: column}
     .hello_container_description{max-width: 80%}
+    .upper_menu_stack{flex-direction: column}
 
 
 
