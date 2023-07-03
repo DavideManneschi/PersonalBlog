@@ -1,4 +1,7 @@
-AOS.init();
+AOS.init({
+
+  period:2400;
+});
 let menu_hamburger_flag=false;
 let menu_hamburger=document.getElementById('menu_hamburger');
 let button_hamburger=document.getElementById('button_hamburger');
