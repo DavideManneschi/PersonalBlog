@@ -337,7 +337,7 @@ margin-top: 45%;
     .footer_container{flex-direction: column;height: 600px}
     .left_side_footer,.explore_container,.right_side_footer{
 
-        font-size: 25px;
+        font-size: 17px;
         min-width: 100px;
     }
     .explore_container a{
