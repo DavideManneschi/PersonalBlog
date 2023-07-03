@@ -195,25 +195,17 @@ body,html{
 
 }
 
+.title_tech_stack{
 
-.frontend_technologies_container{
+    color: white;
+}
+.frontend_technologies_container,.backend_technologies_container,.databases_technologies_container,.other_technologies_container{
     display: grid;
     grid-template-columns: 300px 300px;
     grid-auto-rows: 300px 300px;
     color: white;
 }
-.backend_technologies_container{
 
-    display: grid;
-    grid-template-columns: 300px 300px ;
-    grid-template-rows: 300px 300px;
-    color: white;
-
-}
-.backend_title,.frontend_title{
-
-    color: white;
-}
 .tech_stack_grid{
 
     background-color: #091f36;
@@ -242,11 +234,11 @@ margin-top: 45%;
 ###########################################################################
  */
 
-@media (width< 2000px) {
+@media (width< 1200px) {
 
     .navigation_links{display: none}
     .button_menu{display: flex}
-    .backend_technologies_container,.frontend_technologies_container{
+    .backend_technologies_container,.frontend_technologies_container,.databases_technologies_container,.other_technologies_container{
 
         display: grid;
         grid-template-columns: 150px 150px ;
@@ -267,7 +259,7 @@ margin-top: 45%;
     .hello_container_description{max-width: 80%}
     .upper_menu_stack{flex-direction: column;
     text-align: center}
-    .backend_technologies_container,.frontend_technologies_container{
+    .backend_technologies_container,.frontend_technologies_container,.databases_technologies_container,.other_technologies_container{
         justify-content: center;
 
         display: grid;
