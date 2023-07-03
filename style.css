@@ -198,15 +198,15 @@ body,html{
 
 .frontend_technologies_container{
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-auto-rows: 200px 200px;
+    grid-template-columns: 300px 300px;
+    grid-auto-rows: 300px 300px;
     color: white;
 }
 .backend_technologies_container{
 
     display: grid;
-    grid-template-columns: 200px 200px ;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px ;
+    grid-template-rows: 300px 300px;
     color: white;
 
 }
@@ -221,6 +221,15 @@ body,html{
 
 .backend_element,.frontend_element{
     text-align: center;
+    border: 3px solid;
+    margin: 3px;
+
+
+
+}
+.backend_element p,.frontend_element p{
+
+margin-top: 45%;
 
 
 
@@ -228,11 +237,12 @@ body,html{
 
 
 
+
 /*
 ###########################################################################
  */
 
-@media (width< 1000px) {
+@media (width< 2000px) {
 
     .navigation_links{display: none}
     .button_menu{display: flex}
