@@ -335,7 +335,11 @@ margin-top: 45%;
     }
     .left_side_footer,.explore_container,.right_side_footer{
 
-        font-size: 7px;
+        font-size: 12px;
+    }
+    .right_side_footer{
+
+        float: left;
     }
 
 
