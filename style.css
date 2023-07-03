@@ -333,7 +333,7 @@ margin-top: 45%;
         grid-template-rows: 150px 150px;
 
     }
-    .footer_container{flex-wrap: wrap}
+    .footer_container{flex-direction: column;height: 600px}
     .left_side_footer,.explore_container,.right_side_footer{
 
         font-size: 15px;
