@@ -311,10 +311,6 @@ margin-top: 45%;
         grid-template-rows: 150px 150px;
 
     }
-    .left_side_footer,.explore_container,.right_side_footer{
-
-        font-size: 12px;
-    }
 
 
 
@@ -337,6 +333,11 @@ margin-top: 45%;
         grid-template-rows: 150px 150px;
 
     }
+    .left_side_footer,.explore_container,.right_side_footer{
+
+        font-size: 12px;
+    }
+
 
 
 
