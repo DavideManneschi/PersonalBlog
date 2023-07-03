@@ -248,7 +248,7 @@ margin-top: 45%;
 .footer_container{
 
     background-color:#0E2954;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -334,7 +334,7 @@ margin-top: 45%;
 
     }
 
-    .footer_container{flex-direction: column;height: 600px}
+    .footer_container{flex-direction: column;height: 750px}
     .left_side_footer,.explore_container,.right_side_footer{
 
         font-size: 17px;
