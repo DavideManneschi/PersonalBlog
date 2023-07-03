@@ -260,9 +260,15 @@ margin-top: 45%;
 .explore_container{
     display: flex;
     flex-direction: column;
+    gap:2rem;
 }
 .explore_container a{
     text-decoration: none;
+    color: white;
+}
+.left_side_footer p{
+
+    max-width: 300px;
 }
 #generate_mail{
 
