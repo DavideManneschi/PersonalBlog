@@ -321,7 +321,7 @@ margin-top: 45%;
 
     .navigation_links{display: none}
     .button_menu{display: flex}
-    .hello_container{flex-direction: column}
+    .hello_container{flex-direction: column;margin-top:100px }
     .hello_container_description{max-width: 80%}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
     text-align: center}
