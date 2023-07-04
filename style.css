@@ -66,6 +66,7 @@ body,html{
     margin-top: -80px;
     background-color: #0f2862;
     height: 400px;
+
 }
 
 .single_header_link_hamburger{
@@ -298,17 +299,22 @@ margin-top: 45%;
 .main_body_container{
 
     max-width: 1600px;
+    margin: auto;
+    width: 100%;
 
     
 }
 
-div +p{
 
-
-}
 /*
 ###########################################################################
  */
+@media only screen and  (width>1200px) {
+
+    .menu_hamburger{
+        display: none !important;}
+}
+
 
 @media (width< 1200px) {
 
@@ -325,6 +331,7 @@ div +p{
 
 
 }
+
 
 
 @media (width< 900px) {
@@ -358,4 +365,3 @@ div +p{
 
 
 }
-

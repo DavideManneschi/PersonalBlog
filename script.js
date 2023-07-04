@@ -7,30 +7,32 @@ let menu_hamburger=document.getElementById('menu_hamburger');
 let button_hamburger=document.getElementById('button_hamburger');
 let body=document.getElementById("menu_body_container");
 button_hamburger.addEventListener('click',function(){
-  console.log("the button has been clicked!")
+  console.log("the button has been clicked!");
+
 
   if (!menu_hamburger_flag){
 
     menu_hamburger_flag=true;
     menu_hamburger.style.display='none';
     menu_hamburger.classList.add("close");
-    body.classList.remove("hide_body")
-    button_hamburger.style.right='0'
+    body.classList.remove("hide_body");
+    button_hamburger.style.right='0';
 
 
 
 
-  }else{
 
-    menu_hamburger_flag=false;
-    menu_hamburger.style.display='flex';
+  }else if(menu_hamburger_flag) {
+
+    menu_hamburger.style.display = 'none';
+
+    menu_hamburger_flag = false;
+    menu_hamburger.style.display = 'flex';
     menu_hamburger.classList.add("open");
-    body.classList.add("hide_body")
+    body.classList.add("hide_body");
 
   }
-
 })
-
 document.addEventListener("DOMContentLoaded", function () {
 
   const dynamicContent = document.getElementById("dynamic_text");

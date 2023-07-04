@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Davide Manneschi</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
@@ -13,7 +13,7 @@
 
 
 
-<body>
+<body onload="erase_burger()">
 <div class="main_body_container">
 <div class="header_container">
 
@@ -31,7 +31,7 @@
 
         </nav>
     <button id='button_hamburger' class="button_menu"> <img class="svg_hamburger" src="assets/menu.svg"></button>
-    <div id="menu_hamburger" class="menu_hamburger">
+    <nav id="menu_hamburger" class="menu_hamburger">
 
         <a class="single_header_link_hamburger" href="">About </a>
         <a class="single_header_link_hamburger" href="../../.config/JetBrains/WebStorm2023.1/scratches/js.html">Qualifications</a>
@@ -39,7 +39,7 @@
         <a class="single_header_link_hamburger" href="">Projects</a>
         <a class="single_header_link_hamburger" href="">Contact</a>
 
-    </div>
+    </nav>
 
 </div>
 
@@ -266,6 +266,7 @@
 
 
 <script onload="true" src="script.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
 </body>
 
 </html>
