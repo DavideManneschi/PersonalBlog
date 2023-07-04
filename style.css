@@ -63,7 +63,7 @@ body,html{
 }
 
 .about_me{
-
+    margin-top: -80px;
     background-color: #0f2862;
     height: 400px;
 }
@@ -298,6 +298,7 @@ margin-top: 45%;
 .main_body_container{
 
     max-width: 1600px;
+
     
 }
 
