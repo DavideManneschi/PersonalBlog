@@ -177,16 +177,24 @@ body,html{
 
 }
 
-.animation_hello_container{
-    border-top: 1px solid #02d7f2 ;
 
-    border-bottom: 1px solid #02d7f2 ;
+.animation_hello_container_forward{
 
+    width: 400px;
+    height: 1px;
+    background-color:#02d7f2;
+    animation: extend 2s ease-out ;
+}
+.animation_hello_container_back{
 
-    animation: extend 2s  ease-in running ;
-
+    width: 400px;
+    height: 1px;
+    background-color:#02d7f2;
+    animation: inverse_extend 2s ease-out ;
+    animation-direction: normal;
 
 }
+
 .hello_description_container_inside{
     min-width: 400px;
 }
@@ -354,7 +362,7 @@ margin-top: 45%;
     to{width: 400px}
 }
 @keyframes inverse_extend {
-    from{width: 200px}
+    from{width: 400px}
     to{width: 0}
 
 
