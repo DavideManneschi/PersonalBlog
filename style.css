@@ -169,12 +169,30 @@ body,html{
 
 
 .hello_container_description{
-    border-top: 10px solid #02d7f2 ;
-    border-bottom: 10px solid #02d7f2;
 
 
     max-width: 400px;
+
+
+
 }
+
+.hello_container_description:hover{
+    border-top: 10px solid #02d7f2 ;
+    cursor: cell;
+    border-bottom: 10px solid #02d7f2 ;
+
+    max-width: 400px;
+    animation: extend 2s  ease-in running ;
+
+
+}
+.hello_description_container_inside{
+    min-width: 400px;
+}
+
+
+
 
 .image_description{
 
@@ -328,7 +346,23 @@ margin-top: 45%;
 
 
 /*
+###########animations######3
+*/
+
+@keyframes extend {
+    from{width: 0}
+    to{width: 400px}
+}
+@keyframes inverse_extend {
+    from{width: 200px}
+    to{width: 0}
+
+
+}
+/*
 ###########################################################################
+media queries
+
  */
 @media only screen and  (width>1300px) {
 
