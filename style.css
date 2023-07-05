@@ -1,11 +1,15 @@
+
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
 body,html{
 
     margin: 0;
     padding: 0;
+    font-family: Tomorrow, sans-serif;
+    color: black;
 }
 
 .background{
-    background-color: #0E2954;
+    background-color: #f2e900  ;
 
 }
 
@@ -16,7 +20,7 @@ body,html{
     justify-content:space-between;
     align-items: center;
     height: 50px;
-    background-color: #0E2954;
+    background-color: #f2e900  ;
 }
 
 #my_name{
@@ -30,7 +34,7 @@ body,html{
     margin-right: 2rem;
     border-radius: 10px;
     border: none;
-    background-color: #0E2954;
+    background-color: #f2e900 ;
     cursor: pointer;
 
 }
@@ -38,7 +42,7 @@ body,html{
     display: none;
     flex-direction: column;
     gap:1rem;
-    color:#0E2954;
+    background-color:#f2e900  ;
     width: 100%;
     text-align: center;
     transition: 2s;
@@ -53,18 +57,19 @@ body,html{
 
 
 
-    background-color:white;
+
 }
 .description_about_me{
 
     font-size: 50px;
-    color: white;
+    color: black;
 
 }
 
 .about_me{
     margin-top: -80px;
-    background-color: #0f2862;
+    background-color:#f2e900  ;
+
     height: 400px;
 
 }
@@ -72,12 +77,13 @@ body,html{
 .single_header_link_hamburger{
     margin-top: 3rem;
 
+
 }
 
 
 .menu_hamburger a{
     text-decoration: none;
-    color: #0E2954;
+    color: black;
     margin: 1.5rem;
 
 
@@ -328,9 +334,8 @@ margin-top: 45%;
 
     }
 
-
-
 }
+
 
 
 
