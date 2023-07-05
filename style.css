@@ -177,12 +177,12 @@ body,html{
 
 }
 
-.hello_container_description:hover{
+.hello_container_description:focus{
     border-top: 10px solid #02d7f2 ;
     cursor: cell;
     border-bottom: 10px solid #02d7f2 ;
 
-    max-width: 400px;
+
     animation: extend 2s  ease-in running ;
 
 
@@ -392,7 +392,8 @@ media queries
 
     .navigation_links{display: none}
     .button_menu{display: flex}
-    .hello_container{flex-direction: column;margin-top:100px }
+    .hello_description_container_inside{min-width: 0}
+    .hello_container{flex-direction: column;margin-top:100px; align-items: center}
     .hello_container_description{max-width: 80%;margin-bottom: 40px}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
     text-align: center}
