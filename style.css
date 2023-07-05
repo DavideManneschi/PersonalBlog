@@ -165,17 +165,6 @@ body,html{
     color: white;
 
 }
-.hello_container_description:before {
-
-    position: absolute;
-    content: '';
-
-    width: 70%;
-    transform: translateX(-50%);
-    bottom: -15px;
-    left: 50%;
-
-}
 
 
 
@@ -370,7 +359,7 @@ margin-top: 45%;
     .navigation_links{display: none}
     .button_menu{display: flex}
     .hello_container{flex-direction: column;margin-top:100px }
-    .hello_container_description{max-width: 80%}
+    .hello_container_description{max-width: 80%;margin-bottom: 40px}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
     text-align: center}
     .backend_technologies_container,.frontend_technologies_container,.databases_technologies_container,.other_technologies_container{
