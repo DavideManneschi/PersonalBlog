@@ -6,10 +6,11 @@ body,html{
     padding: 0;
     font-family: Tomorrow, sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 .background{
-    background-color: #f2e900  ;
+    background-color: black ;
 
 }
 
@@ -20,12 +21,13 @@ body,html{
     justify-content:space-between;
     align-items: center;
     height: 50px;
-    background-color: #f2e900  ;
+    background-color:black ;
 }
 
 #my_name{
     min-width: 300px;
     margin-left: 2rem;
+    color: black;
 
 
 }
@@ -34,7 +36,7 @@ body,html{
     margin-right: 2rem;
     border-radius: 10px;
     border: none;
-    background-color: #f2e900 ;
+    background-color: black;
     cursor: pointer;
 
 }
@@ -42,7 +44,7 @@ body,html{
     display: none;
     flex-direction: column;
     gap:1rem;
-    background-color:#f2e900  ;
+    background-color: black ;
     width: 100%;
     text-align: center;
     transition: 2s;
@@ -52,7 +54,7 @@ body,html{
 
 
 
-    margin-top: 550px;
+    margin-top: 700px;
     overflow-y: scroll;
 
 
@@ -61,16 +63,18 @@ body,html{
 }
 .description_about_me{
 
-    font-size: 50px;
-    color: black;
+    font-size: 70px;
+    color: yellow;
+    min-height: 350px;
+
 
 }
 
 .about_me{
     margin-top: -80px;
-    background-color:#f2e900  ;
+    background-color: black  ;
 
-    height: 400px;
+
 
 }
 
@@ -83,7 +87,7 @@ body,html{
 
 .menu_hamburger a{
     text-decoration: none;
-    color: black;
+    color: yellow;
     margin: 1.5rem;
 
 
@@ -93,13 +97,13 @@ body,html{
     margin-right: 2rem;
 }
 .single_header_link{
-    color: white;
+    color: yellow;
     margin-left: 0.5rem;
 }
 
 .single_header_link,.title_link{
     text-decoration: none;
-    color: white;
+    color: yellow ;
 }
 
 .svg_hamburger{
@@ -139,6 +143,7 @@ body,html{
     display: flex;
     flex-direction: column;
     gap:5rem;
+    background-color: black;
 }
 
 .about_me{
@@ -155,6 +160,7 @@ body,html{
     align-items: center;
     margin: 2rem;
     justify-content: space-between;
+    color: white;
 
 }
 .hello_container_description{
@@ -315,7 +321,7 @@ margin-top: 45%;
 /*
 ###########################################################################
  */
-@media only screen and  (width>1200px) {
+@media only screen and  (width>1300px) {
 
     .menu_hamburger{
         display: none !important;}
