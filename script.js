@@ -2,14 +2,30 @@ AOS.init({
 
   period:2400
 });
-let container_description=document.getElementById("description_website");
+let inside_container_description=document.getElementById("description_website");
+let container_description=document.getElementById("hello_container");
 let menu_hamburger_flag=false;
 let menu_hamburger=document.getElementById('menu_hamburger');
 let button_hamburger=document.getElementById('button_hamburger');
 let body=document.getElementById("menu_body_container");
 
+container_description.addEventListener('mouseover',()=>{
+  inside_container_description.classList.add("animation_hello_container");
+})
+container_description.addEventListener('mouseout',()=>{
+  inside_container_description.classList.remove("animation_hello_container");
+})
+
+// utilized to reveal components while scrolling down
 
 
+
+
+function reveal_elements(){
+  let elements_to_reveal=document.querySelector("")
+
+
+}
 
 button_hamburger.addEventListener('click',function(){
   console.log("the button has been clicked!");

@@ -177,10 +177,10 @@ body,html{
 
 }
 
-.hello_container_description:hover{
-    border-top: 10px solid #02d7f2 ;
-    cursor: cell;
-    border-bottom: 10px solid #02d7f2 ;
+.animation_hello_container{
+    border-top: 1px solid #02d7f2 ;
+
+    border-bottom: 1px solid #02d7f2 ;
 
 
     animation: extend 2s  ease-in running ;
@@ -382,16 +382,7 @@ media queries
         grid-template-rows: 150px 150px;
 
     }
-    .hello_container_description:active{
-        border-top: 10px solid #02d7f2 ;
-        cursor: cell;
-        border-bottom: 10px solid #02d7f2 ;
 
-
-        animation: extend 2s  ease-in running ;
-
-
-    }
 
 
 }
