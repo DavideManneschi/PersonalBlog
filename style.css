@@ -382,6 +382,16 @@ media queries
         grid-template-rows: 150px 150px;
 
     }
+    .hello_container_description:active{
+        border-top: 10px solid #02d7f2 ;
+        cursor: cell;
+        border-bottom: 10px solid #02d7f2 ;
+
+
+        animation: extend 2s  ease-in running ;
+
+
+    }
 
 
 }
