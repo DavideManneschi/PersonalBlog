@@ -180,28 +180,11 @@ body,html{
 
 
 .hello_container_description{
+    border-top: 10px solid #02d7f2 ;
+    border-bottom: 10px solid #02d7f2;
 
     margin-left: 120px;
     max-width: 400px;
-}
-.hello_container_description:after{
-    position: absolute;
-    content: '';
-    border-top: 10px solid #02d7f2;
-    width: 250px;
-    transform: translateY(30%);
-    bottom: -20px;
-    left: 60%;
-}
-
-.hello_container_description:before{
-    position: absolute;
-    content: '';
-    border-top: 10px solid #02d7f2;
-    width: 250px;
-    transform: translateY(30%);
-   top: -120px;
-    left: -20%;
 }
 
 .image_description{
