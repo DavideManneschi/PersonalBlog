@@ -177,7 +177,7 @@ body,html{
 
 }
 
-.hello_container_description:focus{
+.hello_container_description:hover{
     border-top: 10px solid #02d7f2 ;
     cursor: cell;
     border-bottom: 10px solid #02d7f2 ;
@@ -382,6 +382,7 @@ media queries
         grid-template-rows: 150px 150px;
 
     }
+
 
 }
 
