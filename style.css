@@ -185,7 +185,7 @@ body,html{
     background-color:#02d7f2;
     animation: extend 2s ease-out ;
 }
-.animation_hello_container_back{
+.animation_hello_container_backwards{
 
     width: 400px;
     height: 1px;
@@ -393,6 +393,7 @@ media queries
 
 
 
+
 }
 
 
@@ -404,7 +405,7 @@ media queries
     .button_menu{display: flex}
     .hello_description_container_inside{min-width: 0}
     .hello_container{flex-direction: column;margin-top:100px; align-items: center}
-    .hello_container_description{min-width: 350px;margin-bottom: 40px}
+    .hello_container_description{max-width: 350px;margin-bottom: 40px}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
     text-align: center}
     .backend_technologies_container,.frontend_technologies_container,.databases_technologies_container,.other_technologies_container{
@@ -415,6 +416,7 @@ media queries
         grid-template-rows: 150px 150px;
 
     }
+    .animation_hello_container_forward,.animation_hello_container_back{width: 350px}
 
     .footer_container{flex-direction: column;height: 750px;}
     .left_side_footer,.explore_container,.right_side_footer{
