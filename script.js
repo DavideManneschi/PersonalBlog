@@ -12,9 +12,16 @@ let body=document.getElementById("menu_body_container");
 container_description.addEventListener('mouseover',()=>{
   inside_container_description.classList.add("animation_hello_container");
 })
+container_description.addEventListener('touchstart',()=>{
+  inside_container_description.classList.add("animation_hello_container");
+})
 container_description.addEventListener('mouseout',()=>{
   inside_container_description.classList.remove("animation_hello_container");
 })
+container_description.addEventListener('touchend',()=>{
+  inside_container_description.classList.remove("animation_hello_container");
+})
+
 
 // utilized to reveal components while scrolling down
 
