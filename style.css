@@ -155,7 +155,7 @@ body,html{
 
 }
 .hello_container{
-   border: 10px solid #02d7f2;
+
 
     display: flex;
     flex-direction: row;
@@ -166,6 +166,9 @@ body,html{
 
 }
 .hello_container_description{
+
+    border-top: 10px solid #02d7f2;
+    border-bottom: 10px solid #02d7f2 ;
 
     max-width: 40%;
 }
