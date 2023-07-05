@@ -87,7 +87,7 @@ body,html{
 
 .menu_hamburger a{
     text-decoration: none;
-    color:#02d7f2 ;
+    color:#02d7f2 yellow;
     margin: 1.5rem;
 
 
@@ -97,13 +97,13 @@ body,html{
     margin-right: 2rem;
 }
 .single_header_link{
-    color: #02d7f2 ;
+    color: yellow;
     margin-left: 0.5rem;
 }
 
 .single_header_link,.title_link{
     text-decoration: none;
-    color: #02d7f2  ;
+    color: yellow ;
 }
 
 .svg_hamburger{
