@@ -73,6 +73,7 @@ body,html{
 .about_me{
     margin-top: -80px;
     background-color: black  ;
+    border: 10px solid;
 
 
 
@@ -154,6 +155,7 @@ body,html{
 
 }
 .hello_container{
+   border: 10px solid #02d7f2;
 
     display: flex;
     flex-direction: row;
