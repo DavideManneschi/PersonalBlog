@@ -405,7 +405,7 @@ media queries
     .button_menu{display: flex}
     .hello_description_container_inside{min-width: 0}
     .hello_container{flex-direction: column;margin-top:100px; align-items: center}
-    .hello_container_description{max-width: 80%;margin-bottom: 40px}
+    .hello_container_description{min-width: 350px;margin-bottom: 40px}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
     text-align: center}
     .backend_technologies_container,.frontend_technologies_container,.databases_technologies_container,.other_technologies_container{
