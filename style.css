@@ -250,6 +250,7 @@ body,html{
 .download_cv{
     background-color: transparent;
     border: 3px solid #02d7f2;
+    text-decoration: none;
 }
 .download_cv:hover {
 cursor: pointer;
