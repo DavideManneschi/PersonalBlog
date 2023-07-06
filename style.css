@@ -436,14 +436,7 @@ media queries
 
         margin-top: -100px;
     }
-    @keyframes extend {
-        from{width: 0}
-        to{width: 350px}
-    }
-    @keyframes go_back{
-        from{left: 300px}
-        to{left: 0px}
-    }
+
 
 
 
