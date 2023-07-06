@@ -182,6 +182,10 @@ body,html{
 
 }
 
+#hello_container_forward{
+    position: relative;
+
+}
 
 
 .animation_hello_container_forward{
@@ -189,7 +193,7 @@ body,html{
 
     height: 2px;
     background-color:#02d7f2;
-    animation: extend normal  2s ;
+    animation: extend normal 2s ;
 }
 .animation_hello_container_backwards{
 
@@ -204,7 +208,7 @@ body,html{
 
 
 .hello_description_container_inside{
-    min-width: 400px;
+
 }
 
 
@@ -389,8 +393,8 @@ margin-top: 45%;
 */
 
 @keyframes extend {
-    from{width: 0}
-    to{width: 400px}
+    from{left: -400px}
+    to{left: 0}
 }
 @keyframes go_back{
     from{left: 400px}
@@ -446,6 +450,7 @@ media queries
         grid-template-rows: 150px 150px;
 
     }
+
 
 
 
