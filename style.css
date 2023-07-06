@@ -426,7 +426,7 @@ media queries
         grid-template-rows: 150px 150px;
 
     }
-    .animation_hello_container_forward,.animation_hello_container_back{width: 350px}
+    .animation_hello_container_forward{display: none}
 
     .footer_container{flex-direction: column;height: 750px;}
     .left_side_footer,.explore_container,.right_side_footer{
