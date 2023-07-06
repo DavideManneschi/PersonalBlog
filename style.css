@@ -411,7 +411,7 @@ media queries
     .navigation_links{display: none}
     .button_menu{display: flex}
     .hello_description_container_inside{min-width: 0}
-    .hello_container_{flex-direction: column;margin-top:100px; align-items: center}
+    .hello_container{flex-direction: column;margin-top:100px; align-items: center}
     .hello_container_description{margin-bottom: 40px}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
     text-align: center}
