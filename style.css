@@ -410,7 +410,7 @@ media queries
 
     .navigation_links{display: none}
     .button_menu{display: flex}
-    .hello_description_container_inside{max-width: 350px; text-align: center}
+    .hello_description_container_inside{max-width: 350px;}
     .hello_container{flex-direction: column;margin-top:100px; align-items: center}
     .hello_container_description{margin-bottom: 40px}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
