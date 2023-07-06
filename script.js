@@ -27,13 +27,21 @@ container_description.addEventListener('mouseout',()=>{
   container_backwards.classList.remove("animation_hello_container_backwards");
 })
 
+
 container_description.addEventListener('touchstart',()=>{
-  container_backwards.classList.add("animation_hello_container_forward");
+  container_forward.classList.add("animation_hello_container_forward");
+})
+container_description.addEventListener('touchstart',()=>{
+  container_backwards.classList.add("animation_hello_container_backwards");
+})
+container_description.addEventListener('touchend',()=>{
+  container_forward.classList.remove("animation_hello_container_forward");
+})
+container_description.addEventListener('touchend',()=>{
+  container_backwards.classList.remove("animation_hello_container_backwards");
 })
 
-container_description.addEventListener('touchend',()=>{
-  container_backwards.classList.remove("animation_hello_container_forward");
-})
+
 
 
 // utilized to reveal components while scrolling down
