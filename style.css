@@ -218,14 +218,36 @@ body,html{
 
 
 }
+.button_container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap:5rem;
+
+}
 
 .qualifications_container{
-
+    background-color: yellow;
+    height: 400px;
     display: flex;
     flex-direction: column;
     text-align: center;
 
 
+
+}
+.qualifications_container h2{
+
+    margin-top:100px;
+}
+.download_cv{
+    background-color: transparent;
+    border: 3px solid #02d7f2;
+}
+.download_cv:hover {
+cursor: pointer;
 }
 
 
