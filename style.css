@@ -230,6 +230,7 @@ body,html{
 
 .qualifications_container{
     background-color: yellow;
+
     height: 400px;
     display: flex;
     flex-direction: column;
