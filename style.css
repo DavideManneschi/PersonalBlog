@@ -438,7 +438,7 @@ media queries
     }
     @keyframes extend {
         from{width: 0}
-        to{width: 400px}
+        to{width: 370px}
     }
     @keyframes go_back{
         from{left: 300px}
