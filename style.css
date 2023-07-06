@@ -411,7 +411,7 @@ media queries
     .navigation_links{display: none}
     .button_menu{display: flex}
     .hello_description_container_inside{min-width: 0}
-    .hello_container{flex-direction: column;margin-top:100px; align-items: center;max-width: 50px}
+    .hello_container{flex-direction: column;margin-top:100px; align-items: center}
     .hello_container_description{margin-bottom: 40px}
     .upper_menu_stack,.lower_menu_stack{flex-direction: column;
     text-align: center}
@@ -425,6 +425,7 @@ media queries
     }
 
 
+
     .footer_container{flex-direction: column;height: 750px;}
     .left_side_footer,.explore_container,.right_side_footer{
 
@@ -435,6 +436,15 @@ media queries
 
         margin-top: -100px;
     }
+    @keyframes extend {
+        from{width: 0}
+        to{width: 300px}
+    }
+    @keyframes go_back{
+        from{left: 300px}
+        to{left: 0px}
+    }
+
 
 
 
