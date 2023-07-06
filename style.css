@@ -176,24 +176,35 @@ body,html{
 
 
 }
+#hello_container_forward{
+
+
+}
+#hello_container_backwards{
+    position: relative;
+
+}
+
 
 
 .animation_hello_container_forward{
 
-    width: 400px;
-    height: 1px;
+
+    height: 2px;
     background-color:#02d7f2;
-    animation: extend 2s ease-out ;
+    animation: extend normal  2s ;
 }
 .animation_hello_container_backwards{
 
-    width: 400px;
-    height: 1px;
+
+    height: 2px;
     background-color:#02d7f2;
-    animation: inverse_extend 2s ease-out ;
-    animation-direction: normal;
+    animation: go_back  2s  ;
+
+
 
 }
+
 
 .hello_description_container_inside{
     min-width: 400px;
@@ -361,12 +372,11 @@ margin-top: 45%;
     from{width: 0}
     to{width: 400px}
 }
-@keyframes inverse_extend {
-    from{width: 400px}
-    to{width: 0}
-
-
+@keyframes go_back{
+    from{left: 400px}
+    to{left: 0px}
 }
+
 /*
 ###########################################################################
 media queries
