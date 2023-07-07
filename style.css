@@ -247,14 +247,96 @@ body,html{
 
     margin-top:100px;
 }
+
 .download_cv{
-    background-color: transparent;
-    border: 3px solid #02d7f2;
+
     text-decoration: none;
 }
-.download_cv:hover {
-cursor: pointer;
+.download_cv::before
+ {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: .3s ease-in-out;
 }
+
+.download_cv::after{
+
+    content: "";
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+    transition:   .3s  ease-in-out;
+
+
+}
+:root {
+    --borderColor: #03A9F3;
+}
+.download_cv::before {
+    margin-top: -2px;
+
+    margin-left: -10px;
+    border-top: 2px solid var(--borderColor);
+    border-left: 2px solid var(--borderColor);
+}
+.download_cv::after {
+    margin-left: -10px;
+
+    border-bottom: 2px solid var(--borderColor);
+    border-right: 2px solid var(--borderColor);
+
+    display: inline-block;
+}
+
+.download_cv:hover::before
+{
+    width: calc( 10px);
+    height: calc( 10px);
+}
+.download_cv:hover::after {
+    margin-left: 0;
+    margin-top: 10px;
+    height: 10px;
+    width: 10px ;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .upper_menu_stack,.lower_menu_stack{
