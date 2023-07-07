@@ -483,12 +483,15 @@ margin-top: 45%;
 
 .card_container{
 
-    height: 300px;
-    width: 200px;
+
+    height: 500px;
+    margin-left: 100px;
+    width: 100%;
     display: flex;
     display: -webkit-flex; /* Safari */
     align-content: center;
     align-items: center;
+
 
 
 
@@ -499,30 +502,24 @@ margin-top: 45%;
 }
 
 .card_body{
+    height: 300px;
+    border: 2px solid black;
+    width: 200px;
 
-    margin-right: 50px;
-    margin-left: 20px;
-
-}
-div#content_backend,div#content_frontend{
-    order: 2;
 
 
 }
 
-div#before_button{
-    margin-left: 50px;
 
-    order: 1;
-}
-div#after_button{
-    margin-right: 50px;
 
-    order: 3;
+
+.buttons_preferred_disp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
-.description{
-    order: 4;
-}
+
 .scroll_button{
     background: none;
     border: none;
