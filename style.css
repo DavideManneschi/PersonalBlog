@@ -473,6 +473,72 @@ margin-top: 45%;
 }
 
 
+
+
+
+
+
+
+
+
+.card_container{
+
+    height: 300px;
+    width: 200px;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    align-content: center;
+    align-items: center;
+
+
+
+
+}
+.upper_card{
+    width: 100px;
+}
+
+.card_body{
+
+    margin-right: 50px;
+    margin-left: 20px;
+
+}
+div#content_backend,div#content_frontend{
+    order: 2;
+
+
+}
+
+div#before_button{
+    margin-left: 50px;
+
+    order: 1;
+}
+div#after_button{
+    margin-right: 50px;
+
+    order: 3;
+}
+.description{
+    order: 4;
+}
+.scroll_button{
+    background: none;
+    border: none;
+}
+.navigation_arrows{
+    height: 10px;
+    background:transparent;
+    width: 10px;
+}
+.navigation_arrows:hover{
+
+    cursor: pointer;
+}
+
+
+
 /*
 ###########animations######3
 */

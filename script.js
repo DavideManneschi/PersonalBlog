@@ -134,5 +134,43 @@ document.addEventListener("DOMContentLoaded", function () {
   printLetters(phrases[pharseIndex])
 })
 
+default_slide_index=1;
+default_description_index=1;
+
+// this is for the backend
+function increase_slide(current_slide){
+
+  show_current_slide(default_slide_index+=current_slide);
+
+
+}
+
+show_current_slide(default_slide_index);
+function show_current_slide(current_slide_index){
+  let i;
+
+  // here i get the list of the children that the slide has
+  let get_slide_list=document.getElementsByClassName("single_card_element");
+  let get_description_list=document.getElementsByClassName("single_description");
+  if(current_slide_index>get_slide_list.length)
+  {default_slide_index=1;
+    default_description_index=1}
+
+  if(current_slide_index<1){default_slide_index=get_slide_list.length;
+    default_description_index=get_description_list.length}
+  for(i=0;i<get_slide_list.length;i++){
+
+    get_slide_list[i].style.display='none';
+    get_description_list[i].style.display='none';
+  }
+  get_slide_list[default_slide_index-1].style.display="block";
+  get_description_list[default_slide_index-1].style.display="block";
+
+
+}
+
+// the same applies for the front end
+
+
 
 
