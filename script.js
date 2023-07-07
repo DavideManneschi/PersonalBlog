@@ -6,7 +6,7 @@ AOS.init({
 
 let container_forward=document.getElementById("hello_container_forward");
 let container_backwards=document.getElementById("hello_container_backwards");
-
+let qualifications_container=document.getElementById("qualiications")
 let inside_container_description=document.getElementById("description_website");
 let container_description=document.getElementById("hello_container_");
 let menu_hamburger_flag=false;
@@ -41,7 +41,12 @@ container_description.addEventListener('touchend',()=>{
   container_backwards.classList.remove("animation_hello_container_backwards");
 })
 
-
+qualifications_container.addEventListener('touchstart',()=>{
+  container_backwards.classList.add("animation_hello_container_backwards");
+})
+container_description.addEventListener('touchstart',()=>{
+  container_backwards.classList.add("animation_hello_container_backwards");
+})
 
 
 // utilized to reveal components while scrolling down
