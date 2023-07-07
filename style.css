@@ -223,6 +223,7 @@ body,html{
 
 }
 .button_container{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     text-align: center;
