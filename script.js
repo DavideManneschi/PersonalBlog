@@ -3,7 +3,7 @@ AOS.init({
   period:2400
 });
 
-
+let card_container=document.getElementsByClassName("single_card_element");
 let container_forward=document.getElementById("hello_container_forward");
 let container_backwards=document.getElementById("hello_container_backwards");
 let qualifications_container=document.getElementById("qualiications")
@@ -13,7 +13,7 @@ let menu_hamburger_flag=false;
 let menu_hamburger=document.getElementById('menu_hamburger');
 let button_hamburger=document.getElementById('button_hamburger');
 let body=document.getElementById("menu_body_container");
-
+let flag_animation=0;
 container_description.addEventListener('mouseover',()=>{
   container_forward.classList.add("animation_hello_container_forward");
 })
@@ -51,19 +51,12 @@ container_description.addEventListener('touchstart',()=>{
 
 // utilized to reveal components while scrolling down
 
-
-
-
 function reveal_elements(){
   let elements_to_reveal=document.querySelector("")
 
-
 }
-
 button_hamburger.addEventListener('click',function(){
   console.log("the button has been clicked!");
-
-
   if (!menu_hamburger_flag){
 
     menu_hamburger_flag=true;
@@ -71,11 +64,6 @@ button_hamburger.addEventListener('click',function(){
     menu_hamburger.classList.add("close");
     body.classList.remove("hide_body");
     button_hamburger.style.right='0';
-
-
-
-
-
   }else if(menu_hamburger_flag) {
 
     menu_hamburger.style.display = 'none';
@@ -139,8 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // animation component
 
 const card_movement=[
-  { transform: "tramsition(0) scale(0)" },
-  { transform: "tramsition(0)(360deg) scale(1)" },
 
 ];
 const card_time = {
@@ -154,15 +140,27 @@ default_description_index=1;
 // this is for the backend
 function increase_slide(current_slide){
 
-  show_current_slide(default_slide_index+=current_slide);
+  show_current_slide(default_slide_index += current_slide);
+  for(let i=0;i<card_container.length;i++) {
+    card_container[i].classList.add("animation");
+    setTimeout(() => {
+      card_container[i].classList.remove('animation');
+    }, 2000)
+
+  }
 
 
 }
 
 
 
+
+
+
+
 show_current_slide(default_slide_index);
 function show_current_slide(current_slide_index){
+
   let i;
 
   // here i get the list of the children that the slide has
@@ -180,9 +178,8 @@ function show_current_slide(current_slide_index){
     get_description_list[i].style.display='none';
   }
   get_slide_list[default_slide_index-1].style.display="flex";
-  get_slide_list[default_slide_index-1].animate(card_movement,card_time)
-  get_description_list[default_slide_index-1].style.display="flex";
 
+  get_description_list[default_slide_index-1].style.display="flex";
 }
 
 // the same applies for the front end
