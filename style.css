@@ -485,31 +485,40 @@ margin-top: 45%;
 
 
 
+.card_buttons_container:before{
 
+    content: '';
+    display: table;
+
+
+}
 
 .card_container{
+    margin-top: 100px;
 
 
     height: 500px;
-    margin-left: 100px;
-    width: 100%;
+    margin-left: 180px;
+    /*margin-right: -100px;*/
+
+    width: 1200px;
     display: flex;
     display: -webkit-flex; /* Safari */
-    align-content: center;
+
     align-items: center;
+    justify-content: space-between;
+
 
 
 
 
 
 }
-.upper_card{
-    width: 100px;
-}
+
 
 .card_body{
 
-    height: 300px;
+    height: 20rem;
     border: 2px solid black;
     width: 200px;
 
@@ -541,6 +550,22 @@ margin-top: 45%;
     cursor: pointer;
 }
 
+.single_card_element{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    gap: 5rem;
+}
+
+.card_body{
+    display: flex;
+    flex-direction: column;
+    transition: card_animation 1s ;
+}
+
 
 
 /*
@@ -554,6 +579,12 @@ margin-top: 45%;
 @keyframes go_back{
     from{left: 400px}
     to{left: 0px}
+}
+
+@keyframes card_animation {
+    from {left: 0}
+    to{right: 200px}
+
 }
 
 /*

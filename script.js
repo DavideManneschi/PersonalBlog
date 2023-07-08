@@ -134,6 +134,20 @@ document.addEventListener("DOMContentLoaded", function () {
   printLetters(phrases[pharseIndex])
 })
 
+
+
+// animation component
+
+const card_movement=[
+  { transform: "rotate(0) scale(0)" },
+  { transform: "rotate(360deg) scale(1)" },
+
+];
+const card_time = {
+  duration: 2000,
+  iterations: 1,
+}
+
 default_slide_index=1;
 default_description_index=1;
 
@@ -144,6 +158,8 @@ function increase_slide(current_slide){
 
 
 }
+
+
 
 show_current_slide(default_slide_index);
 function show_current_slide(current_slide_index){
@@ -163,8 +179,9 @@ function show_current_slide(current_slide_index){
     get_slide_list[i].style.display='none';
     get_description_list[i].style.display='none';
   }
-  get_slide_list[default_slide_index-1].style.display="block";
-  get_description_list[default_slide_index-1].style.display="block";
+  get_slide_list[default_slide_index-1].style.display="flex";
+  get_slide_list[default_slide_index-1].animate(card_movement,card_time)
+  get_description_list[default_slide_index-1].style.display="flex";
 
 
 }
