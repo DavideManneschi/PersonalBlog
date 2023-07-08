@@ -139,8 +139,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // animation component
 
 const card_movement=[
-  { transform: "rotate(0) scale(0)" },
-  { transform: "rotate(360deg) scale(1)" },
+  { transform: "tramsition(0) scale(0)" },
+  { transform: "tramsition(0)(360deg) scale(1)" },
 
 ];
 const card_time = {
@@ -182,7 +182,6 @@ function show_current_slide(current_slide_index){
   get_slide_list[default_slide_index-1].style.display="flex";
   get_slide_list[default_slide_index-1].animate(card_movement,card_time)
   get_description_list[default_slide_index-1].style.display="flex";
-
 
 }
 
