@@ -517,10 +517,6 @@ margin-top: 45%;
     justify-content: space-between;
 
 
-
-
-
-
 }
 
 
@@ -679,7 +675,7 @@ media queries
 
 
 
-    .footer_container{flex-direction: column;height: 750px;}
+    .footer_container{flex-direction: column;height: 600px;}
     .left_side_footer,.explore_container,.right_side_footer{
 
         font-size: 17px;
