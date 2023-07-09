@@ -550,9 +550,9 @@ margin-top: 45%;
     border: none;
 }
 .navigation_arrows{
-    height: 10px;
+    height: 20px;
     background:transparent;
-    width: 10px;
+    width: 20px;
 }
 .navigation_arrows:hover{
 
