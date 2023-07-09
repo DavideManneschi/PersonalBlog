@@ -687,6 +687,9 @@ media queries
     .description{
         display: none;
     }
+    .card_container{
+        justify-content: center;
+    }
 
 
 
