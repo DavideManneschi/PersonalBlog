@@ -253,7 +253,7 @@ body,html{
 
     text-decoration: none;
 }
-.download_cv::before,.single_header_link_hamburger::before
+.download_cv::before,.single_header_link_hamburger::before,.explore_button::before
  {
     content: "";
     position: absolute;
@@ -262,7 +262,7 @@ body,html{
     transition: .3s ease-in-out;
 }
 
-.download_cv::after,.single_header_link_hamburger::after{
+.download_cv::after,.single_header_link_hamburger::after,.explore_button::after{
 
     content: "";
     position: absolute;
@@ -276,14 +276,14 @@ body,html{
 :root {
     --borderColor:#02d7f2;
 }
-.download_cv::before,.single_header_link_hamburger::before {
+.download_cv::before,.single_header_link_hamburger::before, .explore_button::before {
     margin-top: -2px;
 
     margin-left: -10px;
     border-top: 2px solid var(--borderColor);
     border-left: 2px solid var(--borderColor);
 }
-.download_cv::after,.single_header_link_hamburger::after {
+.download_cv::after,.single_header_link_hamburger::after,.explore_button::after {
     margin-left: -10px;
 
     border-bottom: 2px solid var(--borderColor);
@@ -292,12 +292,12 @@ body,html{
     display: inline-block;
 }
 
-.download_cv:hover::before,.single_header_link_hamburger:hover::before
+.download_cv:hover::before,.single_header_link_hamburger:hover::before,.explore_button:hover::before
 {
     width: calc( 10px);
     height: calc( 10px);
 }
-.download_cv:hover::after,.single_header_link_hamburger:hover::after {
+.download_cv:hover::after,.single_header_link_hamburger:hover::after,.explore_button:hover::after {
     margin-left: 0;
 
     margin-top: 10px;
@@ -430,6 +430,13 @@ margin-top: 45%;
 
     align-items: center;
 
+}
+
+.explore_button{
+
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .explore_container{
     display: flex;
