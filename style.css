@@ -656,7 +656,7 @@ media queries
 
 
 
-@media (width< 900px) {
+@media (width< 1400px) {
 
     .navigation_links{display: none}
     .button_menu{display: flex}
