@@ -684,11 +684,9 @@ media queries
         margin-top: -100px;
     }
 
-    .single_card_element,.single_card_element_backend{
-
-        flex-direction: column;
+    .description{
+        display: none;
     }
-
 
 
 
