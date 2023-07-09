@@ -675,7 +675,7 @@ media queries
 
 
 
-    .footer_container{flex-direction: column;height: 450px;}
+    .footer_container{flex-direction: column;height: 500px;}
     .left_side_footer,.explore_container,.right_side_footer{
 
         font-size: 17px;
