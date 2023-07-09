@@ -4,6 +4,7 @@ AOS.init({
 });
 
 let card_container=document.getElementsByClassName("single_card_element");
+let card_container_backend=document.getElementsByClassName("single_card_element_backend");
 let container_forward=document.getElementById("hello_container_forward");
 let container_backwards=document.getElementById("hello_container_backwards");
 let qualifications_container=document.getElementById("qualiications")
@@ -13,6 +14,26 @@ let menu_hamburger_flag=false;
 let menu_hamburger=document.getElementById('menu_hamburger');
 let button_hamburger=document.getElementById('button_hamburger');
 let body=document.getElementById("menu_body_container");
+let get_slide_list=document.getElementsByClassName("single_card_element");
+let get_slide_list_backend=document.getElementsByClassName("single_card_element_backend");
+let get_description_list=document.getElementsByClassName("single_description");
+let get_description_list_backend=document.getElementsByClassName("single_description_backend")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let flag_animation=0;
 container_description.addEventListener('mouseover',()=>{
   container_forward.classList.add("animation_hello_container_forward");
@@ -137,10 +158,32 @@ const card_time = {
 default_slide_index=1;
 default_description_index=1;
 
-// this is for the backend
-function increase_slide(current_slide){
 
-  show_current_slide(default_slide_index += current_slide);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// this is front_end_component
+
+function increase_slide_frontend(current_slide){
+
+  show_current_slide_frontend(default_slide_index += current_slide);
   for(let i=0;i<card_container.length;i++) {
     card_container[i].classList.add("animation");
     setTimeout(() => {
@@ -152,20 +195,11 @@ function increase_slide(current_slide){
 
 }
 
-
-
-
-
-
-
-show_current_slide(default_slide_index);
-function show_current_slide(current_slide_index){
-
-  let i;
-
+show_current_slide_frontend(default_slide_index);
+function show_current_slide_frontend(current_slide_index){
   // here i get the list of the children that the slide has
-  let get_slide_list=document.getElementsByClassName("single_card_element");
-  let get_description_list=document.getElementsByClassName("single_description");
+
+
   if(current_slide_index>get_slide_list.length)
   {default_slide_index=1;
     default_description_index=1}
@@ -176,13 +210,68 @@ function show_current_slide(current_slide_index){
 
     get_slide_list[i].style.display='none';
     get_description_list[i].style.display='none';
+
   }
   get_slide_list[default_slide_index-1].style.display="flex";
 
   get_description_list[default_slide_index-1].style.display="flex";
+
 }
 
-// the same applies for the front end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// the same applies for the back end
+
+
+
+function increase_slide_backend(current_slide){
+
+  show_current_slide_backend(default_slide_index += current_slide);
+  for(let i=0;i<card_container_backend.length;i++) {
+    card_container_backend[i].classList.add("animation");
+    setTimeout(() => {
+      card_container_backend[i].classList.remove('animation');
+    }, 2000)
+
+  }
+
+
+}
+show_current_slide_backend(default_slide_index);
+function show_current_slide_backend(current_slide_index){
+  // here i get the list of the children that the slide has
+  if(current_slide_index>get_slide_list_backend.length)
+  {default_slide_index=1;
+    default_description_index=1}
+
+  if(current_slide_index<1){
+    default_slide_index=get_slide_list_backend.length;
+    default_description_index=get_description_list_backend.length}
+  for(i=0;i<get_slide_list_backend.length;i++){
+
+    get_slide_list_backend[i].style.display='none';
+    get_description_list_backend[i].style.display='none';
+
+  }
+  get_slide_list_backend[default_slide_index-1].style.display="flex";
+
+  get_description_list_backend[default_slide_index-1].style.display="flex";
+}
 
 
 

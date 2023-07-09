@@ -552,7 +552,7 @@ margin-top: 45%;
     cursor: pointer;
 }
 
-.single_card_element{
+.single_card_element,.single_card_element_backend{
 
     display: flex;
     flex-direction: column;
