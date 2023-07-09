@@ -639,7 +639,7 @@ media queries
 
 
 
-@media (width< 2400px) {
+@media (max-device-width: 480px) {
 
     .navigation_links{display: none}
     .button_menu{display: flex}
