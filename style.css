@@ -408,7 +408,7 @@ margin-top: 45%;
     margin-bottom: 50px;
 }
 .contacts_container_elements{
-
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
